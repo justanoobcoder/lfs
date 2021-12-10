@@ -72,4 +72,16 @@ for package in m4 ncurses bash coreutils diffutils file findutils \
     source install_package.sh 6 "$package"
 done
 
+chmod +x prepare_chroot.sh chroot_lfs.sh
+sudo ./prepare_chroot.sh "$LFS"
+
+echo "RUNNING IN CHROOT ENVIRONMENT..."
+sleep 3
+sudo chroot "$LFS" /usr/bin/env -i   \
+    HOME=/root                  \
+    TERM="$TERM"                \
+    PS1='(lfs chroot) \u:\w\$ ' \
+    PATH="/usr/bin:/usr/sbin:/bin:/sbin"    \
+    /bin/bash --login +h -c /sources/chroot_lfs.sh
+
 exit 0
