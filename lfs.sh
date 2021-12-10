@@ -45,7 +45,7 @@ case $(uname -m) in
     x86_64) mkdir -pv $LFS/lib64 ;;
 esac
 
-cp -rf *.sh *.py chapter* $LFS/sources
+cp -rf *.csv *.sh *.py chapter* $LFS/sources
 cd $LFS/sources
 export PATH="$LFS/tools/bin:$PATH"
 
