@@ -1,0 +1,7 @@
+Binutils Upstream Fix Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/binutils-2.37-upstream_fix-1.patch,3518fa864fe8d7ef65be4960f380b03b
+Bzip2 Documentation Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/bzip2-1.0.8-install_docs-1.patch,6a5ac7e89b791aae556de0f745916f7f
+Coreutils Internationalization Fixes Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/coreutils-8.32-i18n-1.patch,cd8ebed2a67fff2e231026df91af6776
+Glibc FHS Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/glibc-2.34-fhs-1.patch,9a5997c3452909b1769918c759eff8a2
+Kbd Backspace/Delete Fix Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/kbd-2.4.0-backspace-1.patch,f75cca16a38da6caa7d52151f7136895
+Perl Upstream Fix Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/perl-5.34.0-upstream_fixes-1.patch,fb42558b59ed95ee00eb9f1c1c9b8056
+Systemd Upstream Fixes Patch,https://www.linuxfromscratch.org/patches/lfs/11.0/systemd-249-upstream_fixes-1.patch,a4449dedf514486b8995ee501d1bb8cc
