@@ -128,3 +128,12 @@ for package in man-pages iana-etc glibc zlib bzip2 'xz utils' zstd file readline
     procps util-linux e2fsprogs; do
     source install_package.sh 8 "$package"
 done
+
+if ! [ -f /cleanedup2 ]; then
+    rm -rf /tmp/*
+    find /usr/lib /usr/libexec -name \*.la -delete
+    find /usr -depth -name $(uname -m)-lfs-linux-gnu\* | xargs rm -rf
+    userdel -r tester
+    touch /cleanedup2
+    echo "Cleaned up"
+fi
