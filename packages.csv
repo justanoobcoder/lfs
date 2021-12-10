@@ -59,8 +59,8 @@ perl,5.34.0,https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz,df7ecb0653440b26dc95
 pkg-config,0.29.2,https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz,f6e931e319531b736fadc017f470e68a
 procps,3.3.17,https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.17.tar.xz,d60613e88c2f442ebd462b5a75313d56
 psmisc,23.4,https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.4.tar.xz,8114cd4489b95308efe2509c3a406bbf
-python,3.9.6,https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz,ecc29a7688f86e550d29dba2ee66cf80
-python documentation,3.9.6,https://www.python.org/ftp/python/doc/3.9.6/python-3.9.6-docs-html.tar.bz2,0dae29e4c38af1b6b1a86b35c9e48923
+python,3.9.9,https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tar.xz,11d12076311563252a995201248d17e5
+python documentation,3.9.9,https://www.python.org/ftp/python/doc/3.9.9/python-3.9.9-docs-html.tar.bz2,cd9680d0997c88113564f50d7e230e0d
 readline,8.1,https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz,e9557dd5b1409f5d7b37ef717c64518e
 sed,4.8,https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz,6d906edfdb3202304059233f51f9a71d
 shadow,4.9,https://github.com/shadow-maint/shadow/releases/download/v4.9/shadow-4.9.tar.xz,126924090caf72f3de7e9261fd4e10ac
