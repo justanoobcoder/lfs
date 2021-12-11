@@ -13,6 +13,7 @@
             runstatedir=/run
 
 make
+rm tests/ts/lsns/ioctl_ns
 chown -Rv tester .
 su tester -c "make -k check"
 make install
