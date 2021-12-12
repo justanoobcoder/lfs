@@ -24,4 +24,4 @@ useradd -D --gid 999
 pwconv
 grpconv
 
-passwd root
+echo 'root:linuxfromscratch' | chpasswd
