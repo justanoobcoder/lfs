@@ -4,7 +4,7 @@
 
 export LFS=/mnt/lfs
 export LFS_TGT=x86_64-lfs-linux-gnu
-export LFS_DISK=/dev/sdb
+export LFS_DISK=/dev/sda
 export SRC_DIR="$LFS/sources/src_dir"
 export MAKEFLAGS='-j4'
 
@@ -72,16 +72,25 @@ for package in m4 ncurses bash coreutils diffutils file findutils \
     source install_package.sh 6 "$package"
 done
 
-chmod +x prepare_chroot.sh chroot_lfs.sh
+chmod +x prepare_chroot.sh chroot_lfs.sh chroot_lfs2.sh
 sudo ./prepare_chroot.sh "$LFS"
 
 echo "RUNNING IN CHROOT ENVIRONMENT..."
 sleep 3
-sudo chroot "$LFS" /usr/bin/env -i   \
+
+for script in '/sources/chroot_lfs.sh' '/sources/chroot_lfs2.sh'; do
+    sudo chroot "$LFS" /usr/bin/env -i   \
     HOME=/root                  \
     TERM="$TERM"                \
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH="/usr/bin:/usr/sbin:/bin:/sbin"    \
-    /bin/bash --login +h -c /sources/chroot_lfs.sh
+    /bin/bash --login +h -c "$script"
+done
+
+sudo chroot "$LFS" /usr/bin/env -i \
+    HOME=/root TERM="$TERM"        \
+    PS1='(lfs chroot) \u:\w\$ '    \
+    PATH=/usr/bin:/usr/sbin:/bin:/sbin        \
+    /bin/bash --login
 
 exit 0
