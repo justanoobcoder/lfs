@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 '''
 * This script is for scraping information of LFS basic packages and patches
 like name, version, url, md5sum. All information is saved in packages.csv and

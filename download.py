@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 '''
 * This script is for downloading, checking packages and patches of LFS.
 All failed packages, patches (mismatch md5sum) will be saved in
