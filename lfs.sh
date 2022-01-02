@@ -50,9 +50,15 @@ cd $LFS/sources
 export PATH="$LFS/tools/bin:$PATH"
 
 if [ ! -f packages.csv ] || [ ! -f patches.csv ]; then
-    ./scrape.py
+    if [ ! -d ./venv ]; then
+        python -m venv venv
+    fi
+    source ./venv/bin/activate
+    pip install -r requirements.txt
+    python scrape.py
+    deactivate
 fi
-./download.py
+python download.py
 
 if [ "$(cat failed_packages.csv | wc -l)" != "0" ] ||
     [ "$(cat failed_patches.csv | wc -l)" != "0" ]; then
