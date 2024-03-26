@@ -14,4 +14,9 @@ I use python scripts to download packages and patches. To use these scripts:
     python download.py
     deactivate
 
+## Result
+### LFS
+[![LFS Demo video](https://img.youtube.com/vi/YvsK_jcLrqA/0.jpg)](https://www.youtube.com/watch?v=YvsK_jcLrqA)
 
+### BLFS
+[![LFS Demo video](https://img.youtube.com/vi/C-InYjWA0rg/0.jpg)](https://www.youtube.com/watch?v=C-InYjWA0rg)
