@@ -74,13 +74,12 @@ else
 fi
 
 # Chapter 5
-#for package in binutils gcc linux-api-headers glibc libstdc++; do
-# for package in glibc libstdc++; do
-#     source install_package.sh 5 "$package"
-# done
+for package in binutils gcc linux-api-headers glibc libstdc++; do
+    source install_package.sh 5 "$package"
+done
 
 # Chapter 6
 for package in m4 ncurses bash coreutils diffutils file findutils \
-    gawk grep gzip make patch sed tar 'xz utils' binutils gcc; do
+    gawk grep gzip make patch sed tar xz binutils gcc; do
     source install_package.sh 6 "$package"
 done
