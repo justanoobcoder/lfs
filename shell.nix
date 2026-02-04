@@ -25,10 +25,11 @@
     file
     e2fsprogs
   ]);
-  #runScript = "bash";
   profile = ''
-    alias cl=clear
-    alias v=nvim
+    cl() { clear; }
+    v() { nvim "$@"; }
+    export -f cl
+    export -f v
 
     export LFS="/mnt/lfs"
     export LC_ALL="POSIX"
