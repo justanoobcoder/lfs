@@ -23,7 +23,7 @@
     xz
     texinfo
     file
-    e2fsprogs
+    gum
   ]);
   profile = ''
     cl() { clear; }
@@ -32,7 +32,7 @@
     export -f v
 
     export LFS="/mnt/lfs"
-    export LC_ALL="POSIX"
+    export LC_ALL="C"
     export LFS_TGT="x86_64-lfs-linux-gnu"
     export LFS_DISK="/dev/nvme0n1p7"
     export SRC_DIR="$LFS/sources/src_dir"

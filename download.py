@@ -1,14 +1,3 @@
-'''
-* This script is for downloading, checking packages and patches of LFS.
-All failed packages, patches (mismatch md5sum) will be saved in
-failed_packages.csv and failed_patches.csv
-
-* Tested on Python3.9.9
-
-* Requirement:
-    - packages.csv and patches.csv from scrape.py script
-'''
-
 import csv
 import subprocess
 
