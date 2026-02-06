@@ -3,7 +3,7 @@
 LFS=/mnt/lfs
 
 sudo chroot "$LFS" /usr/bin/env -i \
-    HOME=/root TERM="$TERM" \
+    HOME=/root TERM="linux" \
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH=/usr/bin:/usr/sbin \
     MAKEFLAGS="-j$(nproc)" \
