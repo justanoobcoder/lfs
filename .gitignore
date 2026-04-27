@@ -2,3 +2,5 @@
 *.tgz
 *.patch
 *.csv
+
+.devenv/
