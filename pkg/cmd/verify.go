@@ -41,6 +41,8 @@ func verifyRun(cmd *cobra.Command, args []string) {
 		if _, err := io.Copy(h, f); err != nil {
 			f.Close()
 			fmt.Println(internal.Notify(internal.LevelError, fmt.Sprintf("failed to read %s\n%v", fileName, err)))
+			failed = append(failed, fileName)
+			continue
 		}
 		f.Close()
 

@@ -8,8 +8,8 @@ import (
 )
 
 var (
-	wget bool
-	md5sums  bool
+	wget    bool
+	md5sums bool
 )
 
 func fetchRun(cmd *cobra.Command, args []string) {
@@ -28,9 +28,9 @@ func fetchRun(cmd *cobra.Command, args []string) {
 			errCount++
 			fmt.Println(internal.Notify(internal.LevelError, err.Error()))
 		}
-	}
-	if status == internal.StatusSkipped {
-		skipCount++
+		if status == internal.StatusSkipped {
+			skipCount++
+		}
 	}
 	if md5sums {
 		total++
@@ -38,9 +38,9 @@ func fetchRun(cmd *cobra.Command, args []string) {
 			errCount++
 			fmt.Println(internal.Notify(internal.LevelError, err.Error()))
 		}
-	}
-	if status == internal.StatusSkipped {
-		skipCount++
+		if status == internal.StatusSkipped {
+			skipCount++
+		}
 	}
 
 	fmt.Println("---------------------------------------------------")
