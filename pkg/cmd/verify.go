@@ -17,6 +17,7 @@ func verifyRun(cmd *cobra.Command, args []string) {
 	f, err := os.Open(config.Md5sumsFile)
 	if err != nil {
 		fmt.Println(internal.Notify(internal.LevelError, fmt.Sprintf("failed to open %s\n%v", config.Md5sumsFile, err)))
+		os.Exit(1)
 	}
 	defer f.Close()
 
