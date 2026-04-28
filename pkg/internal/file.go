@@ -50,6 +50,8 @@ func DownloadFile(link string, filename string, override bool, status *Status) e
 
 	written, err := io.Copy(out, resp.Body)
 	if err != nil {
+		out.Close()
+		os.Remove(filename)
 		*status = StatusFailed
 		return fmt.Errorf("failed to write to %s\n%v", filename, err)
 	}
