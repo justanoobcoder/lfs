@@ -36,6 +36,11 @@ func getPackageLinks(wgetListFile string) []string {
 }
 
 func downloadRun(cmd *cobra.Command, args []string) {
+	if jobNum < 1 {
+		fmt.Println(internal.Notify(internal.LevelError, "jobs must be greater than 0"))
+		os.Exit(1)
+	}
+
 	config := internal.LoadConfig()
 	links := getPackageLinks(config.WgetListFile)
 
