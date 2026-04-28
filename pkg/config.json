@@ -1,0 +1,8 @@
+{
+  "wget-list-link": "https://www.linuxfromscratch.org/lfs/view/systemd/wget-list-systemd",
+  "md5sums-link": "https://www.linuxfromscratch.org/lfs/view/systemd/md5sums",
+  "wget-list-file": "wget-list",
+  "md5sums-file": "md5sums",
+  "failed-packages-log": "failed-packages.log",
+  "failed-verify-log": "failed-verify.log"
+}

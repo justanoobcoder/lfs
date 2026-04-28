@@ -2,5 +2,8 @@
 *.tgz
 *.patch
 *.csv
+*.log
+wget-list
+md5sums
 
 .devenv/
